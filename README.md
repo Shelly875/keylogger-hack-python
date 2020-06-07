@@ -12,6 +12,7 @@
   * Packages required: <code> socket, Listener, pynput, logging </code>
   * Environemnt to run: <code> Windows 10 </code>.
   * Firewall - disabled.
+  * Local host ip: <code>127.0.0.1</code>
 # Steps to run:
   * Run first the <code>py</code> file that sends the hacked keys to the reciver - <code>client2.py</code>
   * Run the <code>py</code> file that recived the hacked data from the sender - <code>client.py</code>
