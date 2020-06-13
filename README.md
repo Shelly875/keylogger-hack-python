@@ -8,7 +8,7 @@
   * Liat Gobler
   * Beni Segal
 # Getting Started:
-  * Install <code>pycharm</code> and <code>python3.6</code> or above (for pyhook and python3.7 use: <code>pip install pyWinhook -q</code>
+  * Install <code>pycharm</code> and <code>python3.6</code> or above (for pyhook and python3.7 use: <code>pip install pyWinhook -q</code>)
   * Packages required: <code> socket, Listener, pynput, logging </code>
   * Environemnt to run: <code> Windows 10 </code>.
   * Firewall - disabled.
