@@ -48,7 +48,8 @@ def start():
     pythoncom.PumpMessages()
 
 def send():
-    # something
+    #something
+
 def report():
     send()
     threading.Timer(1800, report).start()
