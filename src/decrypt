@@ -1,9 +1,0 @@
-message=input('Enter your Message:')
-alphabet ='abcdefghijklmnopqrstuvwxyz'
-key=5
-dencrypt =''
-for i in message:
-    position=alphabet.find(i)
-    newposition= (position-5)%26
-    dencrypt +=alphabet[newposition]
-print(dencrypt)

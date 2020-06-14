@@ -2,7 +2,7 @@ import socket, sys, threading
 
 from time import sleep
 
-host, port = '127.0.0.1', 4444
+host, port = '10.200.201.111', 4444
 
 
 class recv_data :
@@ -12,11 +12,11 @@ class recv_data :
 
     def __init__(self):
         data = self.mysocket.recv(1024)
-        f = open('11.txt', 'wb')
+        f = open('log.txt', 'wb')
         while data != bytes(''.encode()):
-            # print(data)
-            data = self.mysocket.recv(1024)
+            print(data)
             f.write(data)
+            data = self.mysocket.recv(1024)
 
 
 re = recv_data()

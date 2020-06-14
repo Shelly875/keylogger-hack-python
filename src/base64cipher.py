@@ -2,13 +2,15 @@ import base64
 
 # encode
 def encodeMsg(msg):
-    message_bytes = msg.encode('ascii')
+    message_bytes = msg.encode('ascii', 'ignore')
     base64_bytes = base64.b64encode(message_bytes)
-    base64_message = base64_bytes.decode('ascii')
+    base64_message = base64_bytes.decode('ascii', 'ignore')
     return base64_message
 
 def decodeMsg(Msg):
-    base64_bytes = Msg.encode('ascii')
+    base64_bytes = Msg.encode('ascii', 'ignore')
     message_bytes = base64.b64decode(base64_bytes)
-    message = message_bytes.decode('ascii')
+    message = message_bytes.decode('ascii', 'ignore')
     return message
+
+# print(decodeMsg('UmV0dXJuIAkgOTQyNDI5Mjk2IAkgRGVsZXRlRiAJIDk0Mjc4NTQyMSAJIGtleWxvZ2dlci1oYWNrLXB5dGhvbiAga2V5bG9nZ2VyLnB5IFB5Q2hhcm0=SCAJIDk0Mjc4Njc2NSAJIGtleWxvZ2dlci1oYWNrLXB5dGhvbiAga2V5bG9nZ2VyLnB5IFB5Q2hhcm0=RyAJIDk0Mjc4Njg5MCAJIGtleWxvZ2dlci1oYWNrLXB5dGhvbiAga2V5bG9nZ2VyLnB5IFB5Q2hhcm0=SCAJIDk0Mjc4NzAxNSAJIGtleWxvZ2dlci1oYWNrLXB5dGhvbiAga2V5bG9nZ2VyLnB5IFB5Q2hhcm0=UmV0dXJuIAkgOTQyNzg4NDg0IAkga2V5bG9nZ2VyLWhhY2stcHl0aG9uICBrZXlsb2dnZXIucHkgUHlDaGFybQ==SCAJIDk0Mjc4OTE1NiAJIGtleWxvZ2dlci1oYWNrLXB5dGhvbiAga2V5bG9nZ2VyLnB5IFB5Q2hhcm0=SiAJIDk0Mjc4OTM0MyAJIGtleWxvZ2dlci1oYWNrLXB5dGhvbiAga2V5bG9nZ2VyLnB5IFB5Q2hhcm0=UmV0dXJuIAkgOTQyNzkwMDE1IAkga2V5bG9nZ2VyLWhhY2stcHl0aG9uICBrZXlsb2dnZXIucHkgUHlDaGFybQ==OSAJIDk0Mjc5MDQzNyAJIGtleWxvZ2dlci1oYWNrLXB5dGhvbiAga2V5bG9nZ2VyLnB5IFB5Q2hhcm0=OCAJIDk0Mjc5MDU2MiAJIGtleWxvZ2dlci1oYWNrLXB5dGhvbiAga2V5bG9nZ2VyLnB5IFB5Q2hhcm0=UmV0dXJuIAkgOTQyNzkwOTg0IAkga2V5bG9nZ2VyLWhhY2stcHl0aG9uICBrZXlsb2dnZXIucHkgUHlDaGFybQ==MyAJIDk0Mjc5MTU3OCAJIGtleWxvZ2dlci1oYWNrLXB5dGhvbiAga2V5bG9nZ2VyLnB5IFB5Q2hhcm0=NCAJIDk0Mjc5MTY3MSAJIGtleWxvZ2dlci1oYWNrLXB5dGhvbiAga2V5bG9nZ2VyLnB5IFB5Q2hhcm0=UmV0dXJuIAkgOTQyNzkyMTQwIAkga2V5bG9nZ2VyLWhhY2stcHl0aG9uICBrZXlsb2dnZXIucHkgUHlDaGFybQ==SCAJIDk0Mjc5MjU2MiAJIGtleWxvZ2dlci1oYWNrLXB5dGhvbiAga2V5bG9nZ2VyLnB5IFB5Q2hhcm0=RyAJIDk0Mjc5MjU5MyAJIGtleWxvZ2dlci1oYWNrLXB5dGhvbiAga2V5bG9nZ2VyLnB5IFB5Q2hhcm0=RiAJIDk0Mjc5MjcwMyAJIGtleWxvZ2dlci1oYWNrLXB5dGhvbiAga2V5bG9nZ2VyLnB5IFB5Q2hhcm0=UmV0dXJuIAkgOTQyNzkzMTcxIAkga2V5bG9nZ2VyLWhhY2stcHl0aG9uICBrZXlsb2dnZXIucHkgUHlDaGFybQ=='))

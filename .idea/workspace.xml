@@ -19,16 +19,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79c9698a-8fdd-48c6-aecc-16b6ca27e1eb" name="Default Changelist" comment="added hide functioxczcn">
-      <change afterPath="$PROJECT_DIR$/src/client2.pyw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/emailSend.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newClient.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newServer.py" afterDir="false" />
+    <list default="true" id="79c9698a-8fdd-48c6-aecc-16b6ca27e1eb" name="Default Changelist" comment="added new functions - client/server">
+      <change afterPath="$PROJECT_DIR$/src/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client2.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/client2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clientLogger.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/clientLogger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/keylogger.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/keylogger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keylogger.py" beforeDir="false" afterPath="$PROJECT_DIR$/keylogger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base64cipher.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/base64cipher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client2.pyw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cryptography" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/decrypt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/emailSend.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/example.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/example.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/newClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/newClient.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/newServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/newServer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vignere-cipher.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +61,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
-  <component name="RunManager" selected="Python.keylogger">
+  <component name="RunManager" selected="Python.old-clientLogger">
     <configuration name="base64-cipher" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="keylogger-hack-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -68,6 +75,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="C:\Users\bs108_000\Desktop\keylogger-hack-python\src\base64cipher.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="base64cipher" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="keylogger-hack-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/base64cipher.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -97,9 +125,75 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="newClient" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="keylogger-hack-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/newClient.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="newServer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="keylogger-hack-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/newServer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="old-clientLogger" type="PythonConfigurationType" factoryName="Python">
+      <module name="keylogger-hack-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/clientLogger.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.keylogger" />
+        <item itemvalue="Python.newServer" />
+        <item itemvalue="Python.base64cipher" />
+        <item itemvalue="Python.newClient" />
         <item itemvalue="Python.base64-cipher" />
       </list>
     </recent_temporary>
@@ -129,7 +223,13 @@
       <option name="project" value="LOCAL" />
       <updated>1592131982640</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL‎00003" summary="added new functions - client/server">
+      <created>1592134645372</created>
+      <option name="number" value="LOCAL‎00003" />
+      <option name="presentableId" value="LOCAL‎00003" />
+      <updated>1592134645372</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -142,16 +242,46 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="turned basecipher to funcations &#10;turned keylogger to funcation based program added timed sending of files" />
     <MESSAGE value="added hide function" />
-    <option name="LAST_COMMIT_MESSAGE" value="added hide function" />
+    <MESSAGE value="added new functions - client/server" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new functions - client/server" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592134533309">
+    <state x="484" y="8" key="#clientLogger" timestamp="1592141504537">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1592134533309" />
+    <state x="484" y="8" key="#clientLogger/0.0.1536.824@0.0.1536.824" timestamp="1592141504537" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592140800309">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1592140800309" />
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1592141309773">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592141309773" />
+    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1592141309773">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592141309773" />
+    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1592141309773">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592141309773" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1592141309773">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592141309773" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1592134739706">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1592134739706" />
+    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592134652106">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1592134652106" />
   </component>
 </project>
