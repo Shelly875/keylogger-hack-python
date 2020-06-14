@@ -1,7 +1,7 @@
 import socket
 
-c = socket.socket()
-c.connect(("XXX.XXX.XXX.XXX", XXXX))
+s = socket.socket()
+s.connect(("10.200.201.39", 6666))
 
 while True:
-    print(c.recv(126).decode())
+    print(s.recv(126).decode())
