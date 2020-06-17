@@ -20,11 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79c9698a-8fdd-48c6-aecc-16b6ca27e1eb" name="Default Changelist" comment="Added new files and directories - keylogger.py">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/shelly.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/shelly.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/shelly.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keylogger.py" beforeDir="false" afterPath="$PROJECT_DIR$/keylogger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base64cipher.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/base64cipher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/keylogger.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/keylogger.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/newClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/newClient.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/newServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/newServer.py" afterDir="false" />
     </list>

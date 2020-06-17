@@ -1,7 +1,9 @@
 <component name="ProjectDictionaryState">
   <dictionary name="shelly">
     <words>
+      <w>addr</w>
       <w>filepath</w>
+      <w>keylogger</w>
       <w>mysocket</w>
       <w>opensocket</w>
       <w>recv</w>

