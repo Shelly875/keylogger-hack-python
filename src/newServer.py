@@ -17,9 +17,10 @@ class transfer:
         self.logFile = logFile
         self.size = os.path.getsize(self.logFile)
         print(' file size : {}'.format(str(self.size)))
+        threading.Timer(2, self.send_file).start()
 
     def send_file(self):
-        with open(self.file_name, 'rb') as file:
+        with open(self.logFile, 'rb') as file:
             data = file.read(1024)
             self.conn.send(data)
             while data != bytes(''.encode()):

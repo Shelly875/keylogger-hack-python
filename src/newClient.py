@@ -14,7 +14,6 @@ class recv_data :
         data = self.mysocket.recv(1024)
         f = open('log.txt', 'wb')
         while data != bytes(''.encode()):
-            print(data)
             f.write(data)
             data = self.mysocket.recv(1024)
 

@@ -19,23 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79c9698a-8fdd-48c6-aecc-16b6ca27e1eb" name="Default Changelist" comment="added new functions - client/server">
-      <change afterPath="$PROJECT_DIR$/src/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="79c9698a-8fdd-48c6-aecc-16b6ca27e1eb" name="Default Changelist" comment="Added new files and directories - keylogger.py">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/shelly.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/keylogger.py" beforeDir="false" afterPath="$PROJECT_DIR$/keylogger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base64cipher.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/base64cipher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client2.pyw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cryptography" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/decrypt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/emailSend.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/example.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/example.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/log.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/newClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/newClient.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/newServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/newServer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vignere-cipher.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,15 +44,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1dJDqWGX5ZAu7UFILSUvmfdXVlJ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
-  <component name="RunManager" selected="Python.old-clientLogger">
+  <component name="RunManager" selected="Python.keylogger">
     <configuration name="base64-cipher" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="keylogger-hack-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -229,7 +225,13 @@
       <option name="presentableId" value="LOCAL‎00003" />
       <updated>1592134645372</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL‎00004" summary="Added new files and directories - keylogger.py">
+      <created>1592141577091</created>
+      <option name="number" value="LOCAL‎00004" />
+      <option name="presentableId" value="LOCAL‎00004" />
+      <updated>1592141577091</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,43 +247,45 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="turned basecipher to funcations &#10;turned keylogger to funcation based program added timed sending of files" />
     <MESSAGE value="added hide function" />
     <MESSAGE value="added new functions - client/server" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new functions - client/server" />
+    <MESSAGE value="Added new files and directories - keylogger.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new files and directories - keylogger.py" />
   </component>
   <component name="WindowStateProjectService">
     <state x="484" y="8" key="#clientLogger" timestamp="1592141504537">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="484" y="8" key="#clientLogger/0.0.1536.824@0.0.1536.824" timestamp="1592141504537" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592140800309">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592144622510">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1592140800309" />
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1592141309773">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1592144622510" />
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1592144551404">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592141309773" />
-    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1592141309773">
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592144551404" />
+    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1592144551403">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592141309773" />
-    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1592141309773">
+    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592144551403" />
+    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1592144551403">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592141309773" />
-    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1592141309773">
+    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592144551403" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1592144551403">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592141309773" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1592134739706">
+    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592144551403" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1592141634356">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1592134739706" />
-    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592134652106">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1592141634356" />
+    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592141582477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1592134652106" />
+    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1592141582477" />
   </component>
 </project>
