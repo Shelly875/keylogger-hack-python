@@ -15,7 +15,6 @@ class transfer:
         print(' Server is ready ..')
         self.mysocket.listen(5)
         self.conn, self.addr = self.mysocket.accept()
-
         self.logFile = logFile
         self.size = os.path.getsize(self.logFile)
         print(' file size : {}'.format(str(self.size)))
@@ -30,7 +29,7 @@ class transfer:
                 # print(data)
                 data = file.read(1024)
                 self.conn.send(data)
-
             print(' File sent successfully.')
 
 # Transfer = transfer()
+

