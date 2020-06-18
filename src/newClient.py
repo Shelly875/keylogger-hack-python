@@ -11,6 +11,8 @@ def decode_text():
     f_decrypt = open('decrypt_log.txt', 'a')
     for line in f_log:
         f_decrypt.write(base64cipher.decodeMsg(line))
+    f_decrypt.flush()
+    os.fsync(f_decrypt.fileno())
     f_log.close()
     f_decrypt.close()
 
@@ -26,9 +28,9 @@ class recv_data:
         while data != bytes(''.encode()):
             # print(data)
             f.write(data)
-            f.flush()
-            os.fsync(f.fileno())
             data = self.mysocket.recv(1024)
+        f.flush()
+        os.fsync(f.fileno())
         decode_text()
 
 
