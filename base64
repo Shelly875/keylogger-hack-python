@@ -1,0 +1,7 @@
+import base64
+base64_message = 'bWVzc2FnZT1pbnB1dCgnRW50ZXIgeW91ciBNZXNzYWdlOicpCmFscGhhYmV0ID0nYWJjZGVmZ2hpamtsbW5vcHFyc3R1dnd4eXonCmtleT01CmRlbmNyeXB0ID0nJwpmb3IgaSBpbiBtZXNzYWdlOgogICAgcG9zaXRpb249YWxwaGFiZXQuZmluZChpKQogICAgbmV3cG9zPSAocG9zaXRpb24tNSklMjYKICAgIGVuY3J5cHQrPWFscGhhYmV0W25ld3Bvc10KcHJpbnQoZGVuY3J5cHQp'
+base64_bytes = base64_message.encode('ascii')
+message_bytes = base64.b64decode(base64_bytes)
+message = message_bytes.decode('ascii')
+
+print(message)
