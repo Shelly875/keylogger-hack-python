@@ -1,4 +1,4 @@
-import socket, sys, threading
+import socket, sys, threading, os
 from src import base64cipher
 from time import sleep
 
@@ -11,6 +11,8 @@ def decode_text():
     f_decrypt = open('decrypt_log.txt', 'a')
     for line in f_log:
         f_decrypt.write(base64cipher.decodeMsg(line))
+    f_log.close()
+    f_decrypt.close()
 
 
 class recv_data:
@@ -24,6 +26,8 @@ class recv_data:
         while data != bytes(''.encode()):
             # print(data)
             f.write(data)
+            f.flush()
+            os.fsync(f.fileno())
             data = self.mysocket.recv(1024)
         decode_text()
 
