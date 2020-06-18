@@ -15,16 +15,3 @@ def decodeMsg(Msg):
     message_bytes = base64.b64decode(Msg)
     message = message_bytes.decode('ascii', 'ignore')
     return message
-
-# a = 'shelly\n'
-# b = 'beni\n'
-# c = 'liat\n'
-# d = a+b+c
-# print(d)
-# e = encodeMsg(d)
-# print(e)
-# e = encodeMsg(a)
-# f = encodeMsg(b)
-# g = e+f
-# print(g)
-# print(decodeMsg(g))
