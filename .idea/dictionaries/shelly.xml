@@ -2,6 +2,7 @@
   <dictionary name="shelly">
     <words>
       <w>addr</w>
+      <w>fdecrypt</w>
       <w>filepath</w>
       <w>keylogger</w>
       <w>mysocket</w>

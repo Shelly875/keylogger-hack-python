@@ -31,4 +31,3 @@ class transfer:
             print(' File sent successfully.')
 
 # Transfer = transfer()
-

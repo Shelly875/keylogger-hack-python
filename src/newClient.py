@@ -7,11 +7,10 @@ host, port = '192.168.1.177', 4444
 
 # Static function that decode the log.txt file
 def decode_text():
-    print(1)
     flog = open('log.txt', 'r')
     fdecrypt = open('decrypt_log.txt', 'a')
     for line in flog:
-        print(1)
+        print('line decrypted:' + base64cipher.decodeMsg(line))
         fdecrypt.write(base64cipher.decodeMsg(line))
     fdecrypt.flush()
     os.fsync(fdecrypt.fileno())
@@ -26,17 +25,14 @@ class recv_data:
     mysocket.connect((host, port))
 
     def __init__(self):
-        data = self.mysocket.recv(1024)
+        # data = self.mysocket.recv(1024)
         f = open('log.txt', 'wb')
-        while data != bytes(''.encode()):
+        while True:
+            data = self.mysocket.recv(1024, False)
             # print(data)
             f.write(data)
             decode_text()
-            data = self.mysocket.recv(1024)
-        f.flush()
-
-
+            # f.flush()
 
 
 re = recv_data()
-

